@@ -77,22 +77,107 @@ if ($url_exist) {
                                 <div class="box-body">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <p class="text-center"><strong>xxx</strong></p>
+                                                <div class="box-header with-border">
+                                                    <p class="text-center text-uppercase"><strong>รายการใบลาล่าสุด</strong></p>
+                                                </div>
+                                                <!-- /.box-header -->
+                                                <div class="box-body">
+                                                    <ul class="products-list product-list-in-box">
+                                                        <li class="item">
+                                                            <div class="product-img">
+                                                                <img src="<?php echo base_url()?>upload/images/default-50x50.gif" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <a href="javascript:void(0)" class="product-title">ลาป่วย วันที่ 12/11/2018 - 14/11/2018
+                                                                    <span class="label label-warning pull-right">รอการพิจารณา</span></a>
+                                                                <span class="product-description">
+                          Samsung 32" 1080p 60Hz LED Smart HDTV.
+                        </span>
+                                                            </div>
+                                                        </li>
+                                                        <!-- /.item -->
+                                                        <li class="item">
+                                                            <div class="product-img">
+                                                                <img src="<?php echo base_url()?>upload/images/default-50x50.gif" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <a href="javascript:void(0)" class="product-title">ลาป่วย วันที่ 10/11/2018 - 11/11/2018
+                                                                    <span class="label label-warning pull-right">รอการพิจารณา</span></a>
+                                                                <span class="product-description">
+                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                        </span>
+                                                            </div>
+                                                        </li>
+                                                        <!-- /.item -->
+                                                        <li class="item">
+                                                            <div class="product-img">
+                                                                <img src="<?php echo base_url()?>upload/images/default-50x50.gif" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <a href="javascript:void(0)" class="product-title">ลาพักผ่อน วันที่ 20/10/2018 - 24/10/2018
+                                                                    <span class="label label-danger pull-right">ไม่อนุมัติ</span></a>
+                                                                <span class="product-description">
+                          Xbox One Console Bundle with Halo Master Chief Collection.
+                        </span>
+                                                            </div>
+                                                        </li>
+                                                        <!-- /.item -->
+                                                        <li class="item">
+                                                            <div class="product-img">
+                                                                <img src="<?php echo base_url()?>upload/images/default-50x50.gif" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-info">
+                                                                <a href="javascript:void(0)" class="product-title">ลากิจส่วนตัว วันที่ 03/08/2018 - 03/08/2018
+                                                                    <span class="label label-success pull-right">อนุมัติ</span></a>
+                                                                <span class="product-description">
+                          PlayStation 4 500GB Console (PS4)
+                        </span>
+                                                            </div>
+                                                        </li>
+                                                        <!-- /.item -->
+                                                    </ul>
+                                                </div>
+                                                <!-- /.box-body -->
+                                                <div class="box-footer text-center">
+                                                    <a href="javascript:void(0)" class="uppercase">ดูรายการลาทั้งหมด</a>
+                                                </div>
+                                                <!-- /.box-footer -->
                                         </div>
                                         <div class="col-md-6">
-                                            <p class="text-center text-uppercase"><strong>Resources</strong></p>
+                                            <p class="text-center text-uppercase"><strong>สถิติการลา</strong></p>
                                             <div class="progress-group">
-                                                <span class="progress-text">Disk use space</span>
+                                                <span class="progress-text">ลาพักผ่อน</span>
                                                 <span class="progress-number"><strong><?php echo byte_format($disk_usespace, 2); ?></strong>/<?php echo byte_format($disk_totalspace, 2); ?></span>
                                                 <div class="progress">
                                                     <div class="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="<?php echo $disk_usepercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $disk_usepercent; ?>%"></div>
                                                 </div>
                                             </div>
                                             <div class="progress-group">
-                                                <span class="progress-text">Memory usage</span>
+                                                <span class="progress-text">ลาป่วย</span>
                                                 <span class="progress-number"><strong><?php echo byte_format($memory_usage, 2); ?></strong>/<?php echo byte_format($memory_peak_usage, 2); ?></span>
                                                 <div class="progress">
                                                     <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="<?php echo $memory_usepercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $memory_usepercent; ?>%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-group">
+                                                <span class="progress-text">ลากิจส่วนตัว</span>
+                                                <span class="progress-number"><strong><?php echo byte_format($disk_usespace, 2); ?></strong>/<?php echo byte_format($disk_totalspace, 2); ?></span>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="<?php echo $disk_usepercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $disk_usepercent; ?>%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-group">
+                                                <span class="progress-text">ลาคลอด</span>
+                                                <span class="progress-number"><strong><?php echo byte_format($disk_usespace, 2); ?></strong>/<?php echo byte_format($disk_totalspace, 2); ?></span>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="<?php echo $disk_usepercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $disk_usepercent; ?>%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-group">
+                                                <span class="progress-text">อื่นๆ</span>
+                                                <span class="progress-number"><strong><?php echo byte_format($disk_usespace, 2); ?></strong>/<?php echo byte_format($disk_totalspace, 2); ?></span>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="<?php echo $disk_usepercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $disk_usepercent; ?>%"></div>
                                                 </div>
                                             </div>
                                         </div>
