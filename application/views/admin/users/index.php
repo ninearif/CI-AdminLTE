@@ -42,15 +42,17 @@ foreach ($user->groups as $group)
 
     // Disabled temporary !!!
     // echo anchor('admin/groups/edit/'.$group->id, '<span class="label" style="background:'.$group->bgcolor.';">'.htmlspecialchars($group->name, ENT_QUOTES, 'UTF-8').'</span>');
-    echo anchor('admin/groups/edit/'.$group->id, '<span class="label label-default">'.htmlspecialchars($group->name, ENT_QUOTES, 'UTF-8').'</span>');
+    echo anchor('admin/groups/edit/'.$group->id, '<span class="label" style="background:'.$group->bgcolor.'">'.htmlspecialchars($group->name, ENT_QUOTES, 'UTF-8').'</span>');
 }
 
 ?>
                                                 </td>
                                                 <td><?php echo ($user->active) ? anchor('admin/users/deactivate/'.$user->id, '<span class="label label-success">'.lang('users_active').'</span>') : anchor('admin/users/activate/'. $user->id, '<span class="label label-default">'.lang('users_inactive').'</span>'); ?></td>
                                                 <td>
-                                                    <?php echo anchor('admin/users/edit/'.$user->id, lang('actions_edit')); ?>
-                                                    <?php echo anchor('admin/users/profile/'.$user->id, lang('actions_see')); ?>
+                                                    <div class="btn-group">
+                                                        <a href="<?php echo base_url().'admin/users/edit/'.$user->id?>" class="btn btn-default"><?php echo lang('actions_edit')?></a>
+                                                        <a href="<?php echo base_url().'admin/users/profile/'.$user->id ?>" class="btn btn-default"><?php echo lang('actions_see')?></a>
+                                                    </div>
                                                 </td>
                                             </tr>
 <?php endforeach;?>

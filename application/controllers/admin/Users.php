@@ -353,7 +353,6 @@ class Users extends Admin_Controller {
             $this->data['id']         = (int) $user->id;
             $this->data['firstname']  = ! empty($user->first_name) ? htmlspecialchars($user->first_name, ENT_QUOTES, 'UTF-8') : NULL;
             $this->data['lastname']   = ! empty($user->last_name) ? ' '.htmlspecialchars($user->last_name, ENT_QUOTES, 'UTF-8') : NULL;
-
             /* Load Template */
             $this->template->admin_render('admin/users/deactivate', $this->data);
 		}
