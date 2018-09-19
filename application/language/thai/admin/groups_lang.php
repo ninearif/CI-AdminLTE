@@ -10,9 +10,9 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['groups_name']        = 'Nome';
-$lang['groups_description'] = 'Descrição';
-$lang['groups_action']      = 'Ação';
-$lang['groups_edit_group']  = 'Editar grupo';
-$lang['groups_create']      = 'Criar grupo';
-$lang['groups_color']       = 'Cor';
+$lang['groups_name']        = 'ชื่อ';
+$lang['groups_description'] = 'คำอธิบาย';
+$lang['groups_action']      = 'จัดการ';
+$lang['groups_edit_group']  = 'แก้ไขกลุ่ม';
+$lang['groups_create']      = 'สร้างกลุ่ม';
+$lang['groups_color']       = 'สี';
