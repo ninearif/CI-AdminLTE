@@ -32,5 +32,3 @@ $config['breadcrumb_el_open']  = '<li>';
 $config['breadcrumb_el_close'] = '</li>';
 $config['breadcrumb_el_first'] = '<i class="fa fa-dashboard"></i>';
 $config['breadcrumb_el_last']  = '<li class="active">';
-
-

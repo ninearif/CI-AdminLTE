@@ -14,7 +14,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="row">
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="info-box">
-                                <span class="info-box-icon bg-maroon"><i class="fa fa-legal"></i></span>
+                                <span class="info-box-icon bg-yellow"><i class="fa fa-envelope"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">ลากิจส่วนตัว</span>
+                                    <span class="info-box-number">7/10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-maroon"><i class="fa fa-heartbeat"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">ลาป่วย</span>
+                                    <span class="info-box-number">5/20</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-sm-block"></div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-aqua"><i class="fa fa-suitcase"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">ลาพักผ่อน</span>
+                                    <span class="info-box-number">11/20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-green"><i class="fa fa-calendar"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">วันลาสะสม</span>
+                                    <span class="info-box-number">22</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <!--
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-maroon"><i class="fa fa-envelope"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Licence</span>
                                     <span class="info-box-number">Free</span>
@@ -23,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="info-box">
-                                <span class="info-box-icon bg-green"><i class="fa fa-check"></i></span>
+                                <span class="info-box-icon bg-green"><i class="fa fa-heartbeat"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">AdminLTE version</span>
                                     <span class="info-box-number">2.3.1</span>
@@ -35,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="info-box">
-                                <span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span>
+                                <span class="info-box-icon bg-aqua"><i class="fa fa-suitcase"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Users</span>
                                     <span class="info-box-number"><?php echo $count_users; ?></span>
@@ -44,25 +86,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="info-box">
-                                <span class="info-box-icon bg-aqua"><i class="fa fa-shield"></i></span>
+                                <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Security groups</span>
                                     <span class="info-box-number"><?php echo $count_groups; ?></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="row">
                         <div class="col-md-12">
 <?php
-/*
-if ($url_exist) {
-    echo 'OK';
-} else {
-    echo 'KO';
-}
-*/
+
+// if ($url_exist) {
+//     echo 'OK';
+// } else {
+//     echo 'KO';
+// }
+
 ?>
                         </div>
 

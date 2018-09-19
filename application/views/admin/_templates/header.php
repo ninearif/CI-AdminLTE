@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/font-awesome/css/font-awesome.min.css'); ?>">
         <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/ionicons/css/ionicons.min.css'); ?>">
         <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/adminlte/css/adminlte.min.css'); ?>">
-        <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/adminlte/css/skins/skin-blue.min.css'); ?>">
+        <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/adminlte/css/skins/skin-green.min.css'); ?>">
 <?php if ($mobile === FALSE && $admin_prefs['transition_page'] == TRUE): ?>
         <link rel="stylesheet" href="<?php echo base_url($plugins_dir . '/animsition/animsition.min.css'); ?>">
 <?php endif; ?>
@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <![endif]-->
 <?php endif; ?>
     </head>
-    <body class="hold-transition skin-blue fixed sidebar-mini">
+    <body class="hold-transition skin-green fixed sidebar-mini">
 <?php if ($mobile === FALSE && $admin_prefs['transition_page'] == TRUE): ?>
         <div class="wrapper animsition">
 <?php else: ?>
