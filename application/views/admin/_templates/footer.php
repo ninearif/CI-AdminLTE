@@ -5,9 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <footer class="main-footer">
                 <div class="pull-right hidden-xs">
-                    <b><?php echo lang('footer_version'); ?></b> Development
+                    <b><?php echo lang('footer_developer'); ?></b> IT Team
                 </div>
-                <strong><?php echo lang('footer_copyright'); ?> &copy; 2014-<?php echo date('Y'); ?> <a href="http://almsaeedstudio.com" target="_blank">Almsaeed Studio</a> &amp; <a href="https://domprojects.com" target="_blank">domProjects</a>.</strong> <?php echo lang('footer_all_rights_reserved'); ?>.
+                <strong><?php echo lang('footer_copyright'); ?> &copy; 2018-<?php echo date('Y'); ?> <a href="http://bachohospital.com" target="_blank">โรงพยาบาลบาเจาะ</a>.</strong> <?php echo lang('footer_all_rights_reserved'); ?>.
             </footer>
         </div>
 
