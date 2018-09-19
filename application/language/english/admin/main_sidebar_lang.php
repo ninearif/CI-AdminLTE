@@ -43,3 +43,9 @@ $lang['menu_search'] = 'Search';
 /* * */$lang['menu_webapp']                     = 'Web application';
 /* ****** */$lang['menu_license']               = 'License';
 /* ****** */$lang['menu_resources']             = 'Resources';
+
+/* ****** */$lang['menu_leave']                 = 'Leave';
+/* *********** */$lang['menu_leave_profile']    = 'Profile';
+/* *********** */$lang['menu_leave_deactivate'] = 'Deactivate';
+/* *********** */$lang['menu_leave_create']     = 'Create';
+/* *********** */$lang['menu_leave_edit']       = 'Edit';
