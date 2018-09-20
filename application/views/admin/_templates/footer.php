@@ -29,5 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php endif; ?>
         <script src="<?php echo base_url($frameworks_dir . '/adminlte/js/adminlte.min.js'); ?>"></script>
         <script src="<?php echo base_url($frameworks_dir . '/domprojects/js/dp.min.js'); ?>"></script>
+
+        <!-- date-range-picker -->
+        <script src="<?php echo base_url($frameworks_dir . '/moment/min/moment.min.js'); ?>"></script>
+        <script src="<?php echo base_url($frameworks_dir . '/bootstrap-daterangepicker/daterangepicker.js'); ?>"></script>
     </body>
 </html>
