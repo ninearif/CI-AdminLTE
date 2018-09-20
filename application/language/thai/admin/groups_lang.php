@@ -10,7 +10,9 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['footer_copyright']           = 'Copyright';
-$lang['footer_all_rights_reserved'] = 'All rights reserved';
-$lang['footer_version']             = 'version';
-$lang['footer_developer']             = 'Developed by';
+$lang['groups_name']        = 'ชื่อ';
+$lang['groups_description'] = 'คำอธิบาย';
+$lang['groups_action']      = 'จัดการ';
+$lang['groups_edit_group']  = 'แก้ไขกลุ่ม';
+$lang['groups_create']      = 'สร้างกลุ่ม';
+$lang['groups_color']       = 'สี';

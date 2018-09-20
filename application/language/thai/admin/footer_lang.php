@@ -11,6 +11,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['footer_copyright']           = 'Copyright';
-$lang['footer_all_rights_reserved'] = 'All rights reserved';
+$lang['footer_all_rights_reserved'] = 'สงวนลิขสิทธิ์';
 $lang['footer_version']             = 'version';
-$lang['footer_developer']             = 'Developed by';
+$lang['footer_developer']             = 'พัฒนาโดย';

@@ -44,7 +44,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <i class="fa fa-dashboard"></i> <span><?php echo lang('menu_dashboard'); ?></span>
                             </a>
                         </li>
-
+                        <li class="<?=active_link_controller('leave')?>">
+                            <a href="<?php echo site_url('admin/leave'); ?>">
+                                <i class="fa fa-envelope"></i> <span><?php echo lang('menu_leave'); ?></span>
+                            </a>
+                        </li>
 
                         <li class="header text-uppercase"><?php echo lang('menu_administration'); ?></li>
                         <li class="<?=active_link_controller('users')?>">
