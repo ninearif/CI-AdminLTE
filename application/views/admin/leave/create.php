@@ -21,37 +21,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                     <?php echo form_open(current_url(), array('class' => 'form-horizontal', 'id' => 'form-create_user')); ?>
                                         <div class="form-group">
-                                            <?php echo lang('users_firstname', 'first_name', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_firstname', 'first_name', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($first_name);?>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <?php echo lang('users_lastname', 'last_name', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_lastname', 'last_name', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($last_name);?>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <?php echo lang('users_company', 'company', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_company', 'company', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($company);?>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <?php echo lang('users_email', 'email', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_email', 'email', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($email);?>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <?php echo lang('users_phone', 'phone', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_phone', 'phone', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($phone);?>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <?php echo lang('users_password', 'password', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_password', 'password', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($password);?>
                                                 <div class="progress" style="margin:0">
@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <?php echo lang('users_password_confirm', 'password_confirm', array('class' => 'col-sm-2 control-label')); ?>
+                                            <?php echo lang('leave_password_confirm', 'password_confirm', array('class' => 'col-sm-2 control-label')); ?>
                                             <div class="col-sm-10">
                                                 <?php echo form_input($password_confirm);?>
                                             </div>

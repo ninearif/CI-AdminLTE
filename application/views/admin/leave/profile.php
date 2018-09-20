@@ -21,47 +21,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <tbody>
 <?php foreach ($user_info as $user):?>
                                             <tr>
-                                                <th><?php echo lang('users_ip_address'); ?></th>
+                                                <th><?php echo lang('leave_ip_address'); ?></th>
                                                 <td><?php echo $user->ip_address; ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_firstname'); ?></th>
+                                                <th><?php echo lang('leave_firstname'); ?></th>
                                                 <td><?php echo htmlspecialchars($user->first_name, ENT_QUOTES, 'UTF-8'); ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_lastname'); ?></th>
+                                                <th><?php echo lang('leave_lastname'); ?></th>
                                                 <td><?php echo htmlspecialchars($user->last_name, ENT_QUOTES, 'UTF-8'); ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_username'); ?></th>
+                                                <th><?php echo lang('leave_username'); ?></th>
                                                 <td><?php echo htmlspecialchars($user->username, ENT_QUOTES, 'UTF-8'); ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_email'); ?></th>
+                                                <th><?php echo lang('leave_email'); ?></th>
                                                 <td><?php echo htmlspecialchars($user->email, ENT_QUOTES, 'UTF-8'); ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_created_on'); ?></th>
+                                                <th><?php echo lang('leave_created_on'); ?></th>
                                                 <td><?php echo date('d-m-Y', $user->created_on); ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_last_login'); ?></th>
+                                                <th><?php echo lang('leave_last_login'); ?></th>
                                                 <td><?php echo ( ! empty($user->last_login)) ? date('d-m-Y', $user->last_login) : NULL; ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_status'); ?></th>
-                                                <td><?php echo ($user->active) ? '<span class="label label-success">'.lang('users_active').'</span>' : '<span class="label label-default">'.lang('users_inactive').'</span>'; ?></td>
+                                                <th><?php echo lang('leave_status'); ?></th>
+                                                <td><?php echo ($user->active) ? '<span class="label label-success">'.lang('leave_active').'</span>' : '<span class="label label-default">'.lang('leave_inactive').'</span>'; ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_company'); ?></th>
+                                                <th><?php echo lang('leave_company'); ?></th>
                                                 <td><?php echo htmlspecialchars($user->company, ENT_QUOTES, 'UTF-8'); ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_phone'); ?></th>
+                                                <th><?php echo lang('leave_phone'); ?></th>
                                                 <td><?php echo $user->phone; ?></td>
                                             </tr>
                                             <tr>
-                                                <th><?php echo lang('users_groups'); ?></th>
+                                                <th><?php echo lang('leave_groups'); ?></th>
                                                 <td>
 <?php foreach ($user->groups as $group):?>
                                                     <?php echo '<span class="label" style="background:'.$group->bgcolor.'">'.htmlspecialchars($group->name, ENT_QUOTES, 'UTF-8').'</span>'; ?>

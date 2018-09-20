@@ -47,7 +47,7 @@ foreach ($user->groups as $group)
 
 ?>
                                                 </td>
-                                                <td><?php echo ($user->active) ? anchor('admin/leave/deactivate/'.$user->id, '<span class="label label-success">'.lang('users_active').'</span>') : anchor('admin/leave/activate/'. $user->id, '<span class="label label-default">'.lang('users_inactive').'</span>'); ?></td>
+                                                <td><?php echo ($user->active) ? anchor('admin/leave/deactivate/'.$user->id, '<span class="label label-success">'.lang('leave_active').'</span>') : anchor('admin/leave/activate/'. $user->id, '<span class="label label-default">'.lang('leave_inactive').'</span>'); ?></td>
                                                 <td>
                                                     <div class="btn-group">
                                                         <a href="<?php echo base_url().'admin/leave/edit/'.$user->id?>" class="btn btn-default"><?php echo lang('actions_edit')?></a>
