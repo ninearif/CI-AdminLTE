@@ -78,7 +78,7 @@ class Leave extends Admin_Controller {
 		if ($this->form_validation->run() == TRUE && $this->ion_auth->register($username, $password, $email, $additional_data))
 		{
             $this->session->set_flashdata('message', $this->ion_auth->messages());
-			redirect('admine/leave', 'refresh');
+			redirect('admin/leave', 'refresh');
 		}
 		else
 		{
@@ -136,7 +136,7 @@ class Leave extends Admin_Controller {
 			);
 
             /* Load Template */
-            $this->template->admin_render('admine/leave/create', $this->data);
+            $this->template->admin_render('admin/leave/create', $this->data);
         }
 	}
 
@@ -144,7 +144,7 @@ class Leave extends Admin_Controller {
 	public function delete()
 	{
         /* Load Template */
-		$this->template->admin_render('admine/leave/delete', $this->data);
+		$this->template->admin_render('admin/leave/delete', $this->data);
 	}
 
 
@@ -158,7 +158,7 @@ class Leave extends Admin_Controller {
 		}
 
         /* Breadcrumbs */
-        $this->breadcrumbs->unshift(2, lang('menu_leave_edit'), 'admine/leave/edit');
+        $this->breadcrumbs->unshift(2, lang('menu_leave_edit'), 'admin/leave/edit');
         $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
         /* Data */
@@ -220,7 +220,7 @@ class Leave extends Admin_Controller {
 
 				    if ($this->ion_auth->is_admin())
 					{
-						redirect('admine/leave', 'refresh');
+						redirect('admin/leave', 'refresh');
 					}
 					else
 					{
@@ -298,7 +298,7 @@ class Leave extends Admin_Controller {
 
 
         /* Load Template */
-		$this->template->admin_render('admine/leave/edit', $this->data);
+		$this->template->admin_render('admin/leave/edit', $this->data);
 	}
 
 
@@ -318,7 +318,7 @@ class Leave extends Admin_Controller {
 		if ($activation)
 		{
             $this->session->set_flashdata('message', $this->ion_auth->messages());
-			redirect('admine/leave', 'refresh');
+			redirect('admin/leave', 'refresh');
 		}
 		else
 		{
@@ -336,7 +336,7 @@ class Leave extends Admin_Controller {
 		}
 
         /* Breadcrumbs */
-        $this->breadcrumbs->unshift(2, lang('menu_leave_deactivate'), 'admine/leave/deactivate');
+        $this->breadcrumbs->unshift(2, lang('menu_leave_deactivate'), 'admin/leave/deactivate');
         $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
 		/* Validate form input */
@@ -371,7 +371,7 @@ class Leave extends Admin_Controller {
 				}
 			}
 
-			redirect('admine/leave', 'refresh');
+			redirect('admin/leave', 'refresh');
 		}
 	}
 
@@ -392,7 +392,7 @@ class Leave extends Admin_Controller {
         }
 
         /* Load Template */
-		$this->template->admin_render('admine/leave/profile', $this->data);
+		$this->template->admin_render('admin/leave/profile', $this->data);
 	}
 
 
