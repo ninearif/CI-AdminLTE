@@ -8,7 +8,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <?php echo $pagetitle; ?>
                     <?php echo $breadcrumb; ?>
                 </section>
-
                 <section class="content">
                     <div class="row">
                         <div class="col-md-12">

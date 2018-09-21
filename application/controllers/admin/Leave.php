@@ -12,7 +12,7 @@ class Leave extends Admin_Controller {
 
         /* Title Page :: Common */
         $this->page_title->push(lang('menu_leave'));
-        $this->data['pagetitle'] = $this->page_title->show();
+		$this->data['pagetitle'] = $this->page_title->show();
 
         /* Breadcrumbs :: Common */
         $this->breadcrumbs->unshift(1, lang('menu_leave'), 'admin/leave');
@@ -49,8 +49,16 @@ class Leave extends Admin_Controller {
         $this->breadcrumbs->unshift(2, lang('menu_leave_create'), 'admin/leave/create');
         $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
+		/* Get all users */
+		$this->data['users'] = $this->ion_auth->users()->result();
+		foreach ($this->data['users'] as $k => $user)
+		{
+			$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
+		}
+
         /* Variables */
 		$tables = $this->config->item('tables', 'ion_auth');
+
 
 		/* Validate form input */
 		$this->form_validation->set_rules('first_name', 'lang:leave_firstname', 'required');
@@ -88,8 +96,7 @@ class Leave extends Admin_Controller {
 				'name'  => 'first_name',
 				'id'    => 'first_name',
 				'type'  => 'text',
-                'class' => 'form-control',
-				'value' => $this->form_validation->set_value('first_name'),
+				'class' => 'form-control',
 			);
 			$this->data['last_name'] = array(
 				'name'  => 'last_name',

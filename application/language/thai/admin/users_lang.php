@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $lang['users_action']              = 'จัดการ';
 $lang['users_active']              = 'Active';
 $lang['users_company']             = 'องค์กร';
-$lang['users_create_user']         = 'สร้างใบลา';
+$lang['users_create_user']         = 'สร้างผู้ใช้';
 $lang['users_created_on']          = 'สร้างเมื่อ';
 $lang['users_deactivate_question'] = 'คุณแน่ใจหรือไม่ที่จะทำการยกเลิกใบลา %s';
 $lang['users_edit_user']           = 'แก้ไขผู้ใช้';

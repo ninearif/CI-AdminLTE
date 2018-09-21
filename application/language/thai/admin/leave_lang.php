@@ -30,3 +30,5 @@ $lang['leave_password_confirm']    = 'ยืนยันรหัสผ่าน
 $lang['leave_phone']               = 'โทรศัพท์';
 $lang['leave_status']              = 'สถานะ';
 $lang['leave_username']            = 'ชื่อผู้ใช้';
+$lang['leave_date_range']          = 'วันที่';
+$lang['leave_period']          = 'ช่วงเวลา';
