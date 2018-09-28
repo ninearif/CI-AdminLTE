@@ -6,7 +6,7 @@ if ( ! function_exists('active_link_controller'))
     function active_link_controller($controller)
     {
         $CI    =& get_instance();
-        $class = $CI->router->fetch_class();
+        $class = $CI->router->class;
 
         return ($class == $controller) ? 'active' : NULL;
     }
@@ -18,7 +18,7 @@ if ( ! function_exists('active_link_function'))
     function active_link_function($controller)
     {
         $CI    =& get_instance();
-        $class = $CI->router->fetch_method();
+        $class = $CI->router->method;
 
         return ($class == $controller) ? 'active' : NULL;
     }
